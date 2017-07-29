@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>李玉清</title>
+</head>
+<style>
+	.box{
+		display: none;
+	}
+</style>
+<body>
+	<h5 class="lyq"></h5>
+	<div class="box">
+		你不知道你的影子多么调皮，总在我的眼前晃动，让我不能有一刻安宁。坏男孩从早上睁开朦胧眼睛的那一刻起，到枕着你的名字入眠进入梦乡，你的影子一直陪着我。 你并不是什么地方都好，你只是什么地方都让我忘不了，我也不是什么地方都坏，只是我愿意为你把坏的地方更改，人无完人，我要感谢上天给我与你相遇的幸运，心有真心，让我们一起走进向往中的春。------李玉清，我爱你。么么哒
+	</div>
+	<script>
+	var index=0;
+	var box=document.querySelector(".box");
+	var lyq=document.querySelector(".lyq");
+	var BoxTxt=box.innerText;
+	console.log(BoxTxt)
+	function Text(){
+		lyq.innerText=BoxTxt.substring(0, index++);
+	}
+	setInterval(Text,200);
+	</script>
+</body>
+</html>
